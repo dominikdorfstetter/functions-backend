@@ -2,30 +2,6 @@ import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 
 /**
- * TODO Triggers
- */
-/*export const onCreateTodo = functions.firestore
-.document(`todos/{todoId}`)
-.onCreate(async event => {
-
-    console.log('Created todo: ' + event);
-});
-
-export const onUpdateTodo = functions.firestore
-.document(`todos/{todoId}`)
-.onUpdate(async event => {
-
-    console.log('Updated todo: ' + event);
-});
-
-export const onDeleteTodo = functions.firestore
-.document(`todos/{todoId}`)
-.onDelete(async event => {
-
-    console.log('Deleted todo: ' + event);
-});*/
-
-/**
  * INTERFACE TODO
  */
 interface Todo {

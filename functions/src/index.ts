@@ -4,16 +4,13 @@ import * as admin from 'firebase-admin';
 admin.initializeApp(functions.config().firebase);
 
 // import modules
-import * as todo from './todo';
+import * as tod0 from './todo';
 import * as user from './user';
 
 
-// TODO Functions // Trigger
-/*export const onCreateTodo = todo.onCreateTodo;
-export const onDeleteTodo = todo.onDeleteTodo;
-export const onUpdateTodo = todo.onUpdateTodo;*/
-export const tod0 = todo.crud_todo;
+// TODO Functions
+export const todo = tod0.crud_todo;
 
-// USER Functions // Trigger
+// USER Functions
 export const onUserCreate = user.onUserCreate;
 export const onUserDelete = user.onUserDelete;
