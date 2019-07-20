@@ -50,7 +50,7 @@ export const crud_todo = functions.https.onRequest((req, res) => {
                 ret = res.status(500).send('not allowed');
             } else {
                 // if passes check creates Todo on firestore
-                trigger_createTodo((req.body.todo)).then((ref: FirebaseFirestore.DocumentReference) => {
+                createTodo((req.body.todo)).then((ref: FirebaseFirestore.DocumentReference) => {
                     console.info(`[TODO] Created ${ref.path}`)
                     ret = res.status(200).json(
                         {
@@ -68,7 +68,7 @@ export const crud_todo = functions.https.onRequest((req, res) => {
     return ret;
 });
 
-const trigger_createTodo = async ({ title, text, user }: Todo) => {
+const createTodo = async ({ title, text, user }: Todo) => {
     const newTodo = {
         title,
         text,
