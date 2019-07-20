@@ -3,7 +3,7 @@
 This is a backend for todo items that a registered user can create, update and delete.
 
 ## What is in it?
-It shows what database & auth triggers can do and some side effects are also implemented.
+It shows what database & auth triggers can do. It also acts as a REST-Endpoint to create todo items.
 
 ## Architecture
 
