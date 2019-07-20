@@ -13,6 +13,8 @@ Everything is bundled together in the /functions/index.ts.
 
 /functions/user/index.ts
 
+Triggers side-effects whenever a user is created or deleted.
+
 ### TODO Rest-Endpoint
 
 /functions/todo/index.ts
